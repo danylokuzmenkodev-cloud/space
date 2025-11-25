@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/space/static/css/main.e17e92c2.css",
+    "main.js": "/space/static/js/main.1bcdeda1.js",
+    "static/media/hero@3x.webp": "/space/static/media/hero@3x.a53c1d867449dcb1d9d5.webp",
+    "static/media/hero@3x.jpg": "/space/static/media/hero@3x.f625ddeff83ae9e37937.jpg",
+    "static/media/offer@3x.webp": "/space/static/media/offer@3x.227c96a6e5e49b7681a9.webp",
+    "static/media/hero@2x.jpg": "/space/static/media/hero@2x.9e72d24134dcad52022c.jpg",
+    "static/media/hero@2x.webp": "/space/static/media/hero@2x.cf7cd208e6d761a6e13b.webp",
+    "static/media/offer@3x.jpg": "/space/static/media/offer@3x.275ad826578fd3bc203e.jpg",
+    "static/media/offer@2x.webp": "/space/static/media/offer@2x.e4f084a6dbfb30d42f9f.webp",
+    "static/media/offer@2x.jpg": "/space/static/media/offer@2x.2cf2399b67bdccaee076.jpg",
+    "static/media/hero.jpg": "/space/static/media/hero.680ad61e4be0df2600d4.jpg",
+    "static/media/hero.webp": "/space/static/media/hero.e28a1d371b6a6496eca0.webp",
+    "static/media/earth@3x.png": "/space/static/media/earth@3x.693b339fb43e3c408cae.png",
+    "static/media/rocket.svg": "/space/static/media/rocket.bf2dbb7c0c33ada062ba83af3725edbe.svg",
+    "static/media/offer.webp": "/space/static/media/offer.4af8bf2d729c21b99110.webp",
+    "static/media/offer.jpg": "/space/static/media/offer.8ba0cded6b90dac8d2a6.jpg",
+    "static/media/earth@2x.png": "/space/static/media/earth@2x.04cdd9fcdceec4e5829b.png",
+    "static/media/earth@3x.webp": "/space/static/media/earth@3x.e1a2097ef4f2058801a8.webp",
+    "static/media/earth.png": "/space/static/media/earth.cc9cc8f679a5aa726310.png",
+    "static/media/earth@2x.webp": "/space/static/media/earth@2x.75d26dd16cc065ff6227.webp",
+    "static/media/earth.webp": "/space/static/media/earth.d03db2239da9379b9522.webp",
+    "static/media/logo.svg": "/space/static/media/logo.9d0e3190407a9ba302fff02d8ec4b1ed.svg",
+    "static/media/basket.svg": "/space/static/media/basket.26a70d8bac9d24a9ef58.svg",
+    "index.html": "/space/index.html",
+    "main.e17e92c2.css.map": "/space/static/css/main.e17e92c2.css.map",
+    "main.1bcdeda1.js.map": "/space/static/js/main.1bcdeda1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17e92c2.css",
+    "static/js/main.1bcdeda1.js"
+  ]
+}
