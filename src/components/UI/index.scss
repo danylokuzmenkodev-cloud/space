@@ -1,0 +1,103 @@
+.button {
+  @include btnBase;
+
+  &--small {
+    min-width: $btn-width-sm;
+  }
+
+  &--large {
+    min-width: $btn-width-lg;
+  }
+
+  &--primary {
+    background: $color-yellow;
+    color: $color-black;
+  }
+
+  &--secondary {
+    background: transparent;
+    color: $color-yellow;
+  }
+
+  &--icon {
+    min-width: auto;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-main;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+
+  &__item {
+    height: 350px;
+    overflow: hidden;
+    padding: 40px;
+    background: $gradient-dark-deep;
+    border-radius: $radius-sm;
+  }
+}
+
+.info-block {
+  &__description {
+    font-weight: $font-extra-bold;
+  }
+}
+
+@include tablet {
+  .button {
+    &--large {
+      height: $btn-height-lg;
+      min-width: $btn-width-lg;
+      font-size: $btn-text-lg;
+    }
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__item {
+      height: 340px;
+    }
+  }
+}
+
+@include desktop-xl {
+  .button {
+    &--small {
+      height: $btn-height-lg;
+      min-width: $btn-width-lg;
+      font-size: $btn-text-lg;
+    }
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    > .grid__item:nth-child(3n + 1) {
+      grid-column: 1 / -1;
+    }
+
+    > .grid__item {
+      grid-column: auto;
+      height: 400px;
+    }
+  }
+}

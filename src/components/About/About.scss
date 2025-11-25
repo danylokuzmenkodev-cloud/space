@@ -1,0 +1,52 @@
+.section-about {
+  color: rgba($color-light, 0.6);
+  margin-bottom: 40px;
+
+  &__details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__details[open] {
+    .section-about__summary {
+      &-button--more {
+        display: none;
+      }
+      &-button--less {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__summary-button--less {
+    display: none;
+  }
+
+  &__summary {
+    display: inline-block;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &-button {
+      color: $color-yellow;
+      font-size: 14px;
+      font-weight: $font-extra-bold;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .section-about {
+    &__summary--button {
+      font-size: 20px;
+    }
+  }
+}

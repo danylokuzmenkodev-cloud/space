@@ -1,0 +1,96 @@
+.section-hero {
+  @include retina-webp-bg(
+    "../../assets/images/hero/hero.webp",
+    "../../assets/images/hero/hero@2x.webp",
+    "../../assets/images/hero/hero@3x.webp",
+    "../../assets/images/hero/hero.jpg",
+    "../../assets/images/hero/hero@2x.jpg",
+    "../../assets/images/hero/hero@3x.jpg"
+  );
+
+  display: flex;
+  min-height: 450px;
+  padding-bottom: 70px;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  &__image {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin-top: auto;
+    text-align: center;
+    position: relative;
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    .info-block__description {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include tablet {
+  .section-hero {
+    padding-bottom: 0;
+
+    &__container {
+      justify-content: start;
+      align-items: center;
+    }
+
+    &__image {
+      top: 50%;
+      left: auto;
+      right: -90px;
+      transform: translateY(-50%);
+    }
+
+    &__info {
+      max-width: 410px;
+      text-align: left;
+      margin-top: 0;
+
+      .info-block__description {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@include desktop-xl {
+  .section-hero {
+    min-height: 490px;
+
+    &__image {
+      right: 0;
+    }
+
+    &__info {
+      max-width: 695px;
+      text-align: left;
+
+      .info-block__description {
+        font-size: 32px;
+      }
+    }
+  }
+}

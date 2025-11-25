@@ -1,0 +1,120 @@
+.section-offer {
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 30px;
+
+    &__title {
+      margin-bottom: 20px;
+
+      h1,
+      h2,
+      h3 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &__description {
+      max-width: 100%;
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .button {
+      margin-top: auto;
+    }
+
+    .grid {
+      &__item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .grid__item {
+    &-1 {
+      @include retina-webp-bg(
+        "../../assets/images/offer/offerOne/offer.webp",
+        "../../assets/images/offer/offerOne/offer@2x.webp",
+        "../../assets/images/offer/offerOne/offer@3x.webp",
+        "../../assets/images/offer/offerOne/offer.jpg",
+        "../../assets/images/offer/offerOne/offer@2x.jpg",
+        "../../assets/images/offer/offerOne/offer@3x.jpg"
+      );
+    }
+    &-2 {
+      @include retina-webp-bg(
+        "../../assets/images/offer/offerTwo/offer.webp",
+        "../../assets/images/offer/offerTwo/offer@2x.webp",
+        "../../assets/images/offer/offerTwo/offer@3x.webp",
+        "../../assets/images/offer/offerTwo/offer.jpg",
+        "../../assets/images/offer/offerTwo/offer@2x.jpg",
+        "../../assets/images/offer/offerTwo/offer@3x.jpg"
+      );
+    }
+    &-3 {
+      @include retina-webp-bg(
+        "../../assets/images/offer/offerThree/offer.webp",
+        "../../assets/images/offer/offerThree/offer@2x.webp",
+        "../../assets/images/offer/offerThree/offer@3x.webp",
+        "../../assets/images/offer/offerThree/offer.jpg",
+        "../../assets/images/offer/offerThree/offer@2x.jpg",
+        "../../assets/images/offer/offerThree/offer@3x.jpg"
+      );
+    }
+    &-4 {
+      @include retina-webp-bg(
+        "../../assets/images/offer/offerFour/offer.webp",
+        "../../assets/images/offer/offerFour/offer@2x.webp",
+        "../../assets/images/offer/offerFour/offer@3x.webp",
+        "../../assets/images/offer/offerFour/offer.jpg",
+        "../../assets/images/offer/offerFour/offer@2x.jpg",
+        "../../assets/images/offer/offerFour/offer@3x.jpg"
+      );
+    }
+  }
+}
+
+@include desktop-lg {
+  .section-offer {
+    .info-block {
+      &__title {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@include desktop-xl {
+  .section-offer {
+    .grid {
+      & > .grid__item:nth-child(3n + 1) {
+        .info-block__title {
+          font-size: 74px;
+        }
+
+        .info-block__description {
+          font-size: 26px;
+        }
+      }
+
+      & > :not(.grid__item:nth-child(3n + 1)) {
+        .info-block {
+          &__title {
+            max-width: 49%;
+          }
+        }
+      }
+    }
+  }
+}

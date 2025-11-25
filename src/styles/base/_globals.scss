@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap");
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $font-main;
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: 1.5;
+  color: $color-light;
+  background: $color-dark-blue;
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section {
+  &__title {
+    margin-bottom: 15px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text--yellow {
+  color: $color-yellow;
+}
+
+.text--purple {
+  color: $color-purple;
+}

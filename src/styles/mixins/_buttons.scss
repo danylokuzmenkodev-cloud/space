@@ -1,0 +1,24 @@
+@mixin btnBase {
+  height: $btn-height-sm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-xxl;
+  border: 2px solid $color-yellow;
+  font-family: $font-main;
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}

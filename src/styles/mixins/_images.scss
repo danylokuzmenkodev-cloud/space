@@ -1,0 +1,29 @@
+@mixin retina-webp-bg(
+  $webp-1x,
+  $webp-2x,
+  $webp-3x,
+  $fallback-1x,
+  $fallback-2x,
+  $fallback-3x,
+  $size: cover,
+  $position: center,
+  $repeat: no-repeat
+) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+
+  @supports (background-image: image-set(url(#{$webp-1x}) 1x)) {
+    background-image: image-set(
+      url(#{$webp-1x}) 1x,
+      url(#{$webp-2x}) 2x,
+      url(#{$webp-3x}) 3x
+    );
+  }
+
+  background-image: image-set(
+    url(#{$fallback-1x}) 1x,
+    url(#{$fallback-2x}) 2x,
+    url(#{$fallback-3x}) 3x
+  );
+}
